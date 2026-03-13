@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MIGI ZONE TOOLZ - Premium stainless steel manicure, pedicure, grooming and dental instruments manufactured in Sialkot, Pakistan. Quality certified with 5-year warranty.">
 <title>MIGI ZONE TOOLZ | Professional Instruments</title>
 
 <style>
@@ -39,6 +40,11 @@ color:white;
 margin-left:25px;
 text-decoration:none;
 font-weight:500;
+transition:color 0.3s ease;
+}
+
+nav a:hover{
+color:#00aaff;
 }
 
 .banner{
@@ -72,6 +78,11 @@ color:white;
 font-size:16px;
 border-radius:5px;
 cursor:pointer;
+transition:background 0.3s ease;
+}
+
+.banner button:hover{
+background:#0088cc;
 }
 
 .section{
@@ -101,6 +112,7 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-8px);
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
 }
 
 .card img{
@@ -157,51 +169,51 @@ margin:10px 0;
 <div class="logo">MZT</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Warranty</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#warranty">Warranty</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
 
-<section class="banner">
+<section class="banner" id="home">
 
 <h1>MIGI ZONE TOOLZ</h1>
 <p>Premium Stainless Steel Manicure, Pedicure, Grooming & Dental Instruments</p>
-<button>Explore Products</button>
+<button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Explore Products</button>
 
 </section>
 
 
-<section class="section">
+<section class="section" id="products">
 
 <h2 class="section-title">Our Instrument Categories</h2>
 
 <div class="categories">
 
 <div class="card">
-<img src="manicure.jpg">
+<img src="manicure.jpg" alt="Professional manicure instruments including nail clippers and cuticle pushers">
 <h3>Manicure Instruments</h3>
 <p>Professional nail clippers, cuticle pushers, nail nippers and tools.</p>
 </div>
 
 <div class="card">
-<img src="pedicure.jpg">
+<img src="pedicure.jpg" alt="High precision pedicure tools designed for salon and medical use">
 <h3>Pedicure Instruments</h3>
 <p>High precision pedicure tools designed for salon and medical use.</p>
 </div>
 
 <div class="card">
-<img src="grooming.jpg">
+<img src="grooming.jpg" alt="Premium tweezers, scissors and beauty grooming accessories">
 <h3>Grooming Instruments</h3>
 <p>Premium tweezers, scissors and beauty grooming accessories.</p>
 </div>
 
 <div class="card">
-<img src="dental.jpg">
+<img src="dental.jpg" alt="Precision stainless steel dental tools for durability and hygiene">
 <h3>Dental Instruments</h3>
 <p>Precision stainless steel dental tools built for durability and hygiene.</p>
 </div>
@@ -211,7 +223,7 @@ margin:10px 0;
 </section>
 
 
-<section class="warranty">
+<section class="warranty" id="warranty">
 
 <h2>5 Year Quality Warranty</h2>
 <p>All MIGI ZONE TOOLZ instruments are manufactured using high-grade stainless steel with strict quality control and a guaranteed 5-year warranty.</p>
@@ -219,7 +231,7 @@ margin:10px 0;
 </section>
 
 
-<section class="section">
+<section class="section" id="about">
 
 <div class="about">
 
@@ -238,20 +250,24 @@ around the world.
 </p>
 </div>
 
-<img src="factory.jpg">
+<img src="factory.jpg" alt="MIGI ZONE TOOLZ manufacturing facility in Sialkot, Pakistan">
 
 </div>
 
 </section>
 
 
-<footer>
+<footer id="contact">
 
 <h2>MIGI ZONE TOOLZ</h2>
 
 <p>Manufacturer of Professional Stainless Steel Instruments</p>
 
-<p>Email: info@mzttoolz.com</p>
+<p>📍 Sialkot, Pakistan</p>
+
+<p>📧 Sales: ali@mgtoolz.com | CEO: usman@mgtoolz.com</p>
+
+<p>📞 +92 339 0300198 | +92 327 3000198</p>
 
 <p>© 2026 MIGI ZONE TOOLZ | All Rights Reserved</p>
 
